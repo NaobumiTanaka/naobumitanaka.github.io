@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naobumi Tanaka â Apps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F8F9FA;
+    --surface:#FFFFFF;
+    --border:#E5E7EB;
+    --ink:#0F172A;
+    --ink-soft:#6B7280;
+    --ink-muted:#9CA3AF;
+    --accent:#2563EB;
+    --accent-soft:#EFF6FF;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter','Zen Kaku Gothic New',sans-serif;
+    min-height:100vh;
+    padding:40px 20px 80px;
+  }
+  .wrap{max-width:720px;margin:0 auto;}
+  header{
+    margin-bottom:48px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--border);
+  }
+  .eyebrow{
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  h1{
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+  .subtitle{
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  @media(min-width:540px){
+    .grid{grid-template-columns:1fr 1fr;}
+  }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:22px 24px;
+    text-decoration:none;
+    color:inherit;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    transition:box-shadow 0.15s, border-color 0.15s, transform 0.12s;
+    cursor:pointer;
+  }
+  .card:hover{
+    box-shadow:0 4px 16px rgba(0,0,0,0.08);
+    border-color:#C7D2FE;
+    transform:translateY(-1px);
+  }
+  .card-icon{font-size:22px;line-height:1;}
+  .card-name{
+    font-size:15px;
+    font-weight:700;
+    color:var(--ink);
+    margin-top:2px;
+  }
+  .card-desc{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    line-height:1.55;
+  }
+  .card-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-top:6px;
+  }
+  .card-link{
+    font-size:11.5px;
+    font-weight:600;
+    color:var(--accent);
+    background:var(--accent-soft);
+    border-radius:6px;
+    padding:3px 9px;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:background 0.1s;
+  }
+  .card-link:hover{background:#DBEAFE;}
+  .card-tag{
+    font-size:10.5px;
+    font-weight:600;
+    color:var(--ink-muted);
+    background:#F3F4F6;
+    border-radius:4px;
+    padding:2px 7px;
+    display:inline-block;
+    margin-top:auto;
+    width:fit-content;
+  }
+  .section-label{
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-muted);
+    margin:32px 0 12px;
+  }
+  footer{
+    margin-top:60px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    font-size:12px;
+    color:var(--ink-muted);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Naobumi Tanaka</div>
+    <h1>ãã¤ã¢ããªä¸è¦§</h1>
+    <p class="subtitle">GitHub Pages ã§å¬éä¸­ã®ã¦ã§ãã¢ããª</p>
+  </header>
+
+  <div class="section-label">ãã¼ã«</div>
+  <div class="grid">
+
+    <a class="card" href="https://naobumitanaka.github.io/salondezuppa/" target="_blank">
+      <div class="card-icon">âï¸</div>
+      <div class="card-name">æç¨¿æã¸ã§ãc«ã¼ã¿ã¼</div>
+      <div class="card-desc">Salon de Zuppa ç¨ã®SNSæç¨¿æã»ã¤ãã³ãå ±åæãAIã§èªåçæãNetlifyé£æºã§Webãµã¤ãã¸ã®å¬éãã</div>
+      <span class="card-tag">Salon de Zuppa</span>
+    </a>
+
+    <a class="card" href="https://naobumitanaka.github.io/harunojin/portal.html" target="_blank">
+      <div class="card-icon">ðï¸</div>
+      <div class="card-name">è¶å¾ã¾ã¤ã ã æ¥ã®é</div>
+      <div class="card-desc">ãã¬ã¤ã«ã©ã³å¤§ä¼ã®éå¶ãã¼ã«ç¾¤ãèåãã»èªå°ã»ç¢å°ã»ã­ããºã³ã¼ã¹ã®ç®¡çã¨ãã¼ã ãã¼ã¿ã«ã</div>
+      <div class="card-links">
+        <a class="card-link" href="https://naobumitanaka.github.io/harunojin/portal.html" target="_blank">ãã¼ã¿ã«</a>
+        <a class="card-link" href="https://naobumitanaka.github.io/harunojin/mow.html" target="_blank">èåã</a>
+        <a class="card-link" href="https://naobumitanaka.github.io/harunojin/guidancevolunteer.html" target="_blank">èªå°</a>
+        <a class="card-link" href="https://naobumitanaka.github.io/harunojin/arrows.html" target="_blank">ç¢å°</a>
+        <a class="card-link" href="https://naobumitanaka.github.io/harunojin/kids.html" target="_blank">ã­ããº</a>
+      </div>
+      <span class="card-tag">Niigata Trail Run</span>
+    </a>
+
+  </div>
+
+  <footer>
+    <a href="https://github.com/NaobumiTanaka" style="color:inherit;text-decoration:none;">github.com/NaobumiTanaka</a>
+  </footer>
+
+</div>
+</body>
+</html>
